@@ -19,7 +19,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #ffa500;
+  background-color: #fb8464;
   border-radius: 10px;
   border: 2px solid #1f1f1f;
 }
@@ -29,7 +29,6 @@ body {
     opacity: 0;
     transform: translateY(10px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
@@ -41,7 +40,6 @@ body {
     opacity: 0;
     transform: translateX(-10px);
   }
-
   to {
     opacity: 1;
     transform: translateX(0);
@@ -53,7 +51,6 @@ body {
     opacity: 0;
     transform: scale(0.9);
   }
-
   to {
     opacity: 1;
     transform: scale(1);
@@ -73,13 +70,7 @@ header {
 .logo {
   font-size: 1.8em;
   font-weight: bold;
-  color: #ffa500;
-  display: flex;
-  align-items: center;
-}
-
-.logo i {
-  margin-right: 10px;
+  color: #fb8464;
 }
 
 nav {
@@ -103,12 +94,7 @@ nav a i {
 }
 
 nav a:hover {
-  color: #ffa500;
-}
-
-.login {
-  display: flex;
-  align-items: center;
+  color: #fb8464;
 }
 
 .login button {
@@ -172,7 +158,7 @@ main {
 .creator {
   display: block;
   font-size: 0.9em;
-  color: #ffa500;
+  color: #fb8464;
   margin-top: 5px;
 }
 
@@ -183,7 +169,7 @@ main {
 .vote-section p {
   margin: 0;
   font-size: 1.2em;
-  color: #ffa500;
+  color: #fb8464;
   display: flex;
   align-items: center;
 }
@@ -193,7 +179,7 @@ main {
 }
 
 .vote-section button {
-  background-color: #ffa500;
+  background-color: #fb8464;
   color: #1f1f1f;
   border: none;
   padding: 10px 15px;
@@ -209,7 +195,7 @@ main {
 }
 
 .vote-section button:hover {
-  background-color: #e69500;
+  background-color: #d45f3f;
 }
 
 .server-tags {
@@ -221,7 +207,7 @@ main {
 }
 
 .tag {
-  background-color: #ffa500;
+  background-color: #fb8464;
   color: #1f1f1f;
   padding: 5px 10px;
   border-radius: 15px;
@@ -317,7 +303,7 @@ main {
 }
 
 .reply-button {
-  background-color: #ffa500;
+  background-color: #fb8464;
   color: #1f1f1f;
   border: none;
   padding: 8px 15px;
@@ -369,7 +355,7 @@ footer {
 .footer-content nav a {
   margin: 0 10px;
   text-decoration: none;
-  color: #ffa500;
+  color: #fb8464;
   font-size: 0.9em;
   animation: slideIn 0.5s ease-out;
 }
