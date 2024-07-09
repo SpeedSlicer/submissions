@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eagler Server List</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <i class="fas fa-server"></i> Eagler Server List
+    </div>
+    <nav>
+      <a href="#"><i class="fas fa-home"></i> Home</a>
+      <a href="#"><i class="fas fa-newspaper"></i> Site News</a>
+    </nav>
+    <div class="login">
+      <button onclick="loginWithDiscord()"><i class="fab fa-discord"></i> Login with Discord</button>
+    </div>
+  </header>
+  <main>
+    <div class="server-card">
+      <div class="server-header">
+        <div>
+          <h1><i class="fas fa-gamepad"></i> ArchMC</h1>
+          <span class="creator">Created by Professor </span>
+        </div>
+        <div class="vote-section">
+          <p><i class="fas fa-thumbs-up"></i> 1006 votes </i></p>
+          <button><i class="fas fa-heart"></i> Vote </button>
+        </div>
+      </div>
+      <div class="server-tags">
+        <span class="tag"><i class="fas fa-shield"></i> PVP</span>
+        <span class="tag"><i class="fas fa-puzzle-piece"></i> Minigames</span>
+        <span class="tag"><i class="fas fa-heart"></i> Survival</span>
+        <span class="tag"><i class="fas fa-paint-brush"></i> Creative</span>
+        <span class="tag"><i class="fas fa-jail"></i> Prison</span>
+        <span class="tag"><i class="fas fa-ellipsis-h"></i> Miscellaneous</span>
+      </div>
+      <div class="server-info">
+        <div class="info-widget">
+          <h2><i class="fas fa-link"></i> Address</h2>
+          <p>wss://mc.arch.lol</p>
+        </div>
+        <div class="info-widget">
+          <h2><i class="fab fa-discord"></i> Discord Server</h2>
+          <button class="discord-button"><i class="fab fa-discord"></i> Join Discord</button>
+        </div>
+      </div>
+      <div class="description">
+        <h2><i class="fas fa-info-circle"></i> Description</h2>
+        <p>ArchMC is the biggest Eaglercraft server with gamemodes designed for every play style. Founded by a team of
+          Minecrafters, our server has become the go-to for anybody seeking a new experience and a fresh breath of
+          gameplay. Whether you're into Minigames, Hardcore Survival, or Creative plots, there's something for everyone
+          here.</p>
+      </div>
+      <div class="comments-section">
+        <h2><i class="fas fa-comments"></i> Comments</h2>
+        <div class="comments">
+          <div class="comment">
+            <div class="comment-content">
+              <p><strong>User1:</strong> Great server, lots of fun! <i class="fas fa-heart"></i></p>
+              <button class="reply-button"><i class="fas fa-reply"></i> Reply</button>
+            </div>
+          </div>
+          <div class="comment">
+            <div class="comment-content">
+              <p><strong>User2:</strong> Love the creative plots! <i class="fas fa-heart"></i></p>
+              <button class="reply-button"><i class="fas fa-reply"></i> Reply</button>
+            </div>
+          </div>
+        </div>
+        <p>You must login to be able to post comments.</p>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-content">
+        <p>&copy; Eagler Server List 2024</p>
+        <nav>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Discord Server</a>
+        </nav>
+      </div>
+    </footer>
+  </main>
+  <script>
+    function loginWithDiscord() {
+      alert("Login with Discord clicked!");
+    }
+  </script>
+</body>
+
+</html>
