@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eagler Server List</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <img src="resources/icon.png" alt="Eagler Server List" class="logo">
+      <h1>Eagler Server List</h1>
+      <nav>
+        <a href="#"><i class="fas fa-home"></i> Home</a>
+        <a href="#"><i class="fas fa-newspaper"></i> Site News</a>
+      </nav>
+    </header>
+
+    <section class="server-info card">
+      <h2>ArchMC <i class="fas fa-check-circle checkmark"></i></h2>
+      <p>Created by <span class="professor">professor</span> at 9 Jun 2024, 4:33am</p>
+      <div class="tags">
+        <span class="tag"><i class="fas fa-shield-alt"></i> PVP</span>
+        <span class="tag"><i class="fas fa-gamepad"></i> MINIGAMES</span>
+        <span class="tag"><i class="fas fa-tree"></i> SURVIVAL</span>
+        <span class="tag"><i class="fas fa-paint-brush"></i> CREATIVE</span>
+        <span class="tag"><i class="fas fa-lock"></i> PRISON</span>
+        <span class="tag"><i class="fas fa-ellipsis-h"></i> MISCELLANEOUS</span>
+      </div>
+    </section>
+
+    <section class="address-votes">
+      <div class="address card">
+        <h3>Address</h3>
+        <div class="address-content">
+          <p id="server-address">wss://mc.arch.lol</p>
+          <button onclick="copyAddress()" class="copy-button"><i class="fas fa-copy"></i> Copy</button>
+        </div>
+      </div>
+      <div class="discord card">
+        <h3>Discord Server</h3>
+        <a href="#" class="button"><i class="fab fa-discord"></i> JOIN DISCORD</a>
+      </div>
+      <div class="votes card">
+        <h3>Votes</h3>
+        <p>This server has 1006 votes.</p>
+        <p class="login-reminder">You must login to be able to vote.</p>
+      </div>
+    </section>
+
+    <section class="description card">
+      <h3>Description</h3>
+      <p>ArchMC is the biggest Eaglercraft server with gamemodes designed for every play style. Founded by a team of
+        Minecrafters, our server has become the go-to for anybody seeking a new experience and a fresh breath of
+        gameplay. Whether you're into Minigames, Hardcore Survival, or Creative plots, there's something for everyone
+        here.</p>
+    </section>
+
+    <section class="comments card">
+      <h3>Comments</h3>
+      <div class="comment-box">
+        <textarea placeholder="Write a comment..." class="comment-input"></textarea>
+        <button class="comment-submit">Post Comment</button>
+      </div>
+      <div class="comment">
+        <div class="comment-header">
+          <img src="resources/profile1.jpg" alt="User Avatar" class="comment-avatar">
+          <span class="comment-author">User123</span>
+          <span class="comment-time">2 hours ago</span>
+        </div>
+        <p class="comment-text">Great server! I had an awesome time playing here.</p>
+      </div>
+      <div class="comment">
+        <div class="comment-header">
+          <img src="resources/profile2.jpeg" alt="User Avatar" class="comment-avatar">
+          <span class="comment-author">Monkey8</span>
+          <span class="comment-time">1 day ago</span>
+        </div>
+        <p class="comment-text">Best Eagler Server</p>
+      </div>
+      <p class="login-reminder">You must login to be able to post comments.</p>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; Eagler Server List 2024</p>
+      <nav>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Discord Server</a>
+      </nav>
+    </footer>
+  </div>
+  <script>
+    function copyAddress() {
+      var copyText = document.getElementById("server-address").innerText;
+      navigator.clipboard.writeText(copyText).then(() => {
+        alert("Address copied to clipboard!");
+      });
+    }
+  </script>
+</body>
+
+</html>
